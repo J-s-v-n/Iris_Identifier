@@ -178,3 +178,110 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }   
+/* ----------------------------------
+   📱 Responsive Design for Mobile
+---------------------------------- */
+@media (max-width: 768px) {
+  /* BIG TEXT: IRIS */
+  .landing-content h1.glow-title {
+    font-size: 4.5rem;
+    letter-spacing: 8px;
+  }
+
+  /* SUBTITLE */
+  .subtitle-upper {
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+  }
+
+  /* TAGLINE */
+  .tagline {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+
+  /* EXPLORE BUTTON */
+  .explore-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+    bottom: 30px;
+  }
+
+  /* FORM SECTION */
+  .form-section {
+    padding: 40px 10px;
+  }
+
+  .form-container {
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  /* FORM TITLE */
+  .form-title {
+    font-size: 2rem;
+  }
+
+  /* LABELS */
+  label {
+    font-size: 0.95rem;
+  }
+
+  /* INPUT BOXES */
+  input {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  /* BUTTON */
+  button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+.site-footer {
+  background: #0f0c29;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  font-family: 'Josefin Sans', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-icons {
+  margin: 10px 0;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-icons img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+}
+
+/* Attribution style */
+.attribution {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
