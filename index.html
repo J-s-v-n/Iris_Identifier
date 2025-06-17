@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iris Flower Classifier</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Fullscreen Landing Page -->
+<section class="landing">
+  <div class="landing-content">
+    <h1 class="glow-title">IRIS</h1>
+    <h2 class="subtitle-upper">FLOWER SPECIES PREDICTION</h2>
+    <p class="tagline">Discover the Flower Species Instantly</p>   
+  </div>
+  <a href="#predict" class="explore-btn">Explore ↓</a>
+</section>
+
+
+  <!-- Prediction Form Section -->
+  <section id="predict" class="form-section">
+    <div class="form-container">
+      <h2 class="form-title">Species Predictor</h2>
+
+      <form id="iris-form">
+        <label for="sepal_length">Sepal Length</label>
+        <input type="number" step="0.1" min="4.0" max="8.0" id="sepal_length" placeholder="4.0 - 8.0 cm" required />
+
+        <label for="sepal_width">Sepal Width</label>
+        <input type="number" step="0.1" min="2.0" max="4.5" id="sepal_width" placeholder="2.0 - 4.5 cm" required />
+
+        <label for="petal_length">Petal Length</label>
+        <input type="number" step="0.1" min="1.0" max="7.0" id="petal_length" placeholder="1.0 - 7.0 cm" required />
+
+        <label for="petal_width">Petal Width</label>
+        <input type="number" step="0.1" min="0.1" max="2.5" id="petal_width" placeholder="0.1 - 2.5 cm" required />
+
+       <button type="submit">Predict Species</button>
+        <div id="result"></div>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

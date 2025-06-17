@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #121212;
+}
+
+/* Landing Page */
+.landing {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  position: relative;
+  text-align: center;
+}
+
+.landing-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Explore Button */
+.explore-btn {
+  position: absolute;
+  bottom: 40px;
+  padding: 14px 36px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: 'Michroma', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #a855f7, 0 0 30px transparent;
+}
+
+.explore-btn:hover {
+  background: rgba(168, 85, 247, 0.15);
+  border-color: #a855f7;
+  box-shadow: 0 0 20px #a855f7, 0 0 40px #a855f7;
+  transform: translateY(-2px);
+}
+
+/* Form Section */
+.form-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* SAME as .landing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.06); /* translucent white */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 100%;
+  color: white;
+}
+label {
+  font-family: 'Josefin Sans', sans-serif;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.1);
+}
+
+input:focus {
+  outline: none;
+  border-color: #a855f7;
+  box-shadow: 0 0 15px #a855f7;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  font-size: 1.1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ffffff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #ffffff;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1d3557;
+}
+.landing-content h1.glow-title {
+  font-family: 'Michroma', sans-serif;
+  font-size: 10rem !important;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: 15px;
+  text-shadow:
+    0 0 60px #a855f7,
+    0 0 100px #a855f7,
+    0 0 140px #a855f7,
+    0 0 180px #a855f7;
+  margin-bottom: 40px;
+}
+.subtitle-upper {
+  font-family: 'Michroma', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #d1c4e9;
+  margin-bottom: 25px;
+}
+.tagline {
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.2rem;
+  color: #ccc;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.form-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+/* Remove arrows (spinners) in number inputs (Chrome, Safari, Edge) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}   
